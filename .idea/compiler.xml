@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djava.net.preferIPv4Stack=true" />
+    <bytecodeTargetLevel>
+      <module name="fiatBot.main" target="1.8" />
+      <module name="fiatBot.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<configuration>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="o.b.n.d.MultiplexingDiscovery" level="WARN" />
+    <logger name="org.bitcoinj.core.Peer" level="WARN" />
+    <logger name="org.bitcoinj.core.BitcoinSerializer" level="WARN" />
+    <logger name="org.mongodb.driver.cluster" level="WARN" />
+    <logger name="org.mongodb.driver.protocol.command" level="WARN" />
+    <logger name="org.bitcoinj.wallet.DeterministicKeyChain" level="WARN" />
+    <logger name="org.bitcoinj.core.PeerGroup" level="WARN" />
+    <logger name="org.bitcoinj.net.NioClientManager" level="WARN" />
+    <logger name="org.bitcoinj.core.PeerGroup$ChainDownloadSpeedCalculato" level="WARN" />
+    <logger name="org.mongodb.driver.connection" level="TRACE" />
+    <logger name="Companion" level="WARN" />
+
+    <logger name="FiatBot" level="TRACE" />
+    <logger name="UpdateProcessor" level="TRACE" />
+    <logger name="BTCManager" level="TRACE" />
+    <logger name="Trader" level="TRACE" />
+    <logger name="n.fiatbot.trader.Trader$Companion" level="TRACE" />
+    <logger name="Deal" level="TRACE" />
+    <logger name="MAIN" level="TRACE" />
+
+    <root level="TRACE">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
